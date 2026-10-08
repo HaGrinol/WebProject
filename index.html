@@ -3,8 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title></title>
   </head>
   <body>
+    <header>
+      <div class = "logo_text">
+        <img src="src/assets/hero.png" alt="logo">
+        <h2>WebShop</h2>
+      </div>
+    </header>
+    <main>
+      <div class = "cards_container" id = "cards">
+      </div>
+    </main>
+    <template id="cardTemplate">
+      <a href = "#" class = "card_link">
+        <div class = "card">
+          <img alt="card" class="card_img">
+          <h2 class = "price"></h2>
+          <h3 class = "title"></h3>
+        </div>
+      </a>
+    </template>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
