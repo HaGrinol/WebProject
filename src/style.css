@@ -117,3 +117,25 @@ header h2{
     min-height: 0;
     padding: 2rem;
 }
+@media (orientation: portrait) {
+    .product_info {
+        height: auto;
+        width: auto;
+    }
+    .product_main{
+        display: flex;
+        overflow: visible;
+    }
+    .product_img{
+        height: 50dvh;
+    }
+    .product_info {
+        height: auto;
+        overflow-y: visible;
+    }
+}
+@media (orientation: portrait) and (max-width: 768px) {
+    .product_main{
+        display: block;
+    }
+}
